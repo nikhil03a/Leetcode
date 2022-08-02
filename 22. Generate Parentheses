@@ -13,7 +13,8 @@ class Solution {
             temp.append('(');
             backtrack(ans,a+1,b,n,temp);
             temp.deleteCharAt(temp.length()-1);
-        }if(a>b){
+        }
+        if(a>b){
             temp.append(')');
             backtrack(ans,a,b+1,n,temp);
             temp.deleteCharAt(temp.length()-1);
