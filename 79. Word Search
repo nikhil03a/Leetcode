@@ -1,0 +1,14 @@
+class Solution {
+    boolean result=false;
+    public boolean exist(char[][] board, String word) {
+        boolean[][] used = new boolean[board.length][board[0].length];
+        boolean temp = false;
+        for(int i=0;i<board.length;i++){
+            for(int j=0;j<board[0].length;j++){
+                if(board[i][j]==word.charAt(0)){
+                    backtrack(board,used,0,word,i,j);
+                }
+            }
+        }
+        return result;
+    }
