@@ -14,24 +14,9 @@
  * }
  */
 class Solution {
-    // List<Integer> list = new ArrayList<Integer>();
     public boolean isValidBST(TreeNode root) {
-        // inorder(root);
-        // for(int i=0; i<list.size()-1; i++){
-        //     if(list.get(i+1)<=list.get(i)){
-        //         return false;
-        //     }
-        // }
-        // return true;
         return dfs(root, Long.MAX_VALUE, Long.MIN_VALUE);
     }
-    // public void inorder(TreeNode root){
-    //     if(root==null)
-    //         return;
-    //     inorder(root.left);
-    //     list.add(root.val);
-    //     inorder(root.right);       
-    // }
     public boolean dfs(TreeNode root, long max, long min){
         if(root==null)
             return true;
