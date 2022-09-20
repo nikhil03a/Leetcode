@@ -33,15 +33,4 @@ class Solution {
         list2.add(root);
         inorder(root.right);
     }
-    // public void inorder2(TreeNode root, int i, int j){
-    //     if(root==null)
-    //         return;
-    //     inorder(root.left);
-    //     if(root.val==i){
-    //         root.val = j;
-    //     }else if(root.val==j){
-    //         root.val = i;
-    //     }
-    //     inorder(root.right);
-    // }
 }
